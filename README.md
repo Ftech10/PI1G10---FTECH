@@ -146,6 +146,4 @@ A integração cria e remove bancos temporários com prefixo `ftech_test_`, usan
 
 Os testes de navegador alteram dados e devem usar uma **instância exclusiva de demonstração**. Consulte [docs/TESTES.md](docs/TESTES.md).
 
-## Limites
 
-Sem pagamentos reais, recuperação de senha por e-mail, upload de foto individual ou validação profissional de professores. A prescrição e a interpretação dos registros continuam a cargo do professor. A aplicação é um projeto acadêmico; esta versão não deve ser usada para receber cobranças reais.
