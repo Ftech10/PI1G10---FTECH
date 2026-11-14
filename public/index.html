@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>FTECH | Fitness • Tecnologia • Resultados</title>
+    <link rel="icon" href="assets/ftech_icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="v51-final.css" />
+    <link rel="stylesheet" href="showcase.css" />
+    <link rel="preload" as="image" href="assets/banner-futebol-treino.webp" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="modal-root"></div>
+    <script src="product.js"></script>
+    <script src="billing.js"></script>
+    <script src="app.js"></script>
+    <template id="ftech-welcome-template"
+      ><dialog
+        class="sports-welcome"
+        aria-labelledby="sports-welcome-title"
+        aria-describedby="sports-welcome-description"
+      >
+        <div class="sports-welcome-inner">
+          <img
+            class="sports-welcome-art"
+            src="assets/banner-futebol-treino.webp"
+            alt="Composição ilustrativa de um jogador de futebol e uma atleta em treino com cordas, gerada por IA"
+            width="1672"
+            height="941"
+            fetchpriority="high"
+          />
+          <div class="sports-welcome-shade" aria-hidden="true"></div>
+          <button
+            class="sports-welcome-close"
+            type="button"
+            data-welcome-close
+            aria-label="Fechar apresentação e acessar o site"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="sports-welcome-content">
+            <img
+              class="sports-welcome-logo"
+              src="assets/ftech_logo.png"
+              alt="FTECH"
+              width="150"
+              height="50"
+            /><span class="sports-kicker"
+              ><span aria-hidden="true"></span>FUTEBOL + TREINO + TECNOLOGIA</span
+            >
+            <h1 id="sports-welcome-title">O jogo muda.<br />Seu preparo<br /><em>também.</em></h1>
+            <p id="sports-welcome-description">
+              Do campo ao treino intenso.<br />Um plano claro para cada passo da sua rotina.
+            </p>
+            <div class="sports-welcome-actions">
+              <button class="btn sports-primary" type="button" data-welcome-close>
+                Explorar o FTECH <span class="sports-arrow" aria-hidden="true"></span></button
+              ><button class="sports-login-link" type="button" data-welcome-login>
+                Já tenho uma conta
+              </button>
+            </div>
+            <div class="sports-disciplines">
+              <span>FUTEBOL</span><span>FORÇA</span><span>ALTA INTENSIDADE</span>
+            </div>
+          </div>
+          <div class="sports-welcome-data">
+            <div class="sports-chart">
+              <div class="sports-chart-heading">
+                <span>EXEMPLO DE HISTÓRICO</span><b>Carga registrada <small>kg</small></b>
+              </div>
+              <svg viewBox="0 0 280 92" role="img" aria-labelledby="welcome-chart-title">
+                <title id="welcome-chart-title">
+                  Gráfico ilustrativo: cargas de 20, 22,5, 25 e 27,5 kg em quatro semanas. Não são
+                  dados reais.
+                </title>
+                <defs>
+                  <linearGradient id="welcome-fill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#c8f57a" stop-opacity=".24" />
+                    <stop offset="1" stop-color="#c8f57a" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path class="sports-chart-grid" d="M18 20H262M18 46H262M18 72H262" fill="none" />
+                <path d="M22 69L99 54L178 35L257 14V79H22Z" fill="url(#welcome-fill)" />
+                <path class="sports-chart-line" d="M22 69L99 54L178 35L257 14" fill="none" />
+                <g class="sports-chart-dots">
+                  <circle cx="22" cy="69" r="3" />
+                  <circle cx="99" cy="54" r="3" />
+                  <circle cx="178" cy="35" r="3" />
+                  <circle cx="257" cy="14" r="3" />
+                </g>
+                <g class="sports-chart-labels">
+                  <text x="22" y="90" text-anchor="middle">S1</text>
+                  <text x="99" y="90" text-anchor="middle">S2</text>
+                  <text x="178" y="90" text-anchor="middle">S3</text>
+                  <text x="257" y="90" text-anchor="middle">S4</text>
+                </g></svg
+              ><small class="sports-chart-caption"
+                >Gráfico ilustrativo · sem dados reais de usuários</small
+              >
+            </div>
+          </div>
+          <span class="sports-welcome-note">Arte gerada por IA · apresentação ilustrativa</span>
+        </div>
+      </dialog></template
+    >
+    <script src="showcase.js"></script>
+  </body>
+</html>

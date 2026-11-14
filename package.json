@@ -1,0 +1,38 @@
+{
+  "name": "ftech",
+  "version": "6.0.0",
+  "private": true,
+  "description": "FTECH - plataforma acadêmica de acompanhamento de treinos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db": "node scripts/init-db.js",
+    "migrate": "node scripts/migrate.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "test": "node --test tests/unit.test.js",
+    "test:integration": "node --test tests/integration.test.js",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,css,html,json,md}\"",
+    "setup": "node scripts/setup-env.js",
+    "test:browser": "playwright test",
+    "seed:presentation": "node scripts/seed-demo.js --presentation"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^8.7.4",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.10.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

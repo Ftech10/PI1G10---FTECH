@@ -1,0 +1,42 @@
+FTECH 6.0 — COMEÇAR E APRESENTAR
+
+INSTALAÇÃO NOVA
+1. Instale Node.js 20+ e MySQL 8+ (ou MariaDB 10.6+).
+2. Abra um terminal nesta pasta.
+3. Execute: npm ci
+4. Execute: npm run setup
+5. Abra .env e configure DB_HOST, DB_PORT, DB_USER, DB_PASSWORD e DB_NAME.
+6. Execute: npm run db
+7. Para apresentação completa em banco novo: npm run seed:presentation
+8. Execute: npm start
+9. Abra http://localhost:3000
+No PowerShell, use npm.cmd no lugar de npm, se necessário.
+
+CONTAS PRONTAS
+aluno@fithtech.com
+personal@fithtech.com
+admin@fithtech.com
+Senha das contas novas: DEMO_PASSWORD no seu .env.
+Elas já têm acesso fictício liberado; os perfis de aluno e professor exibem dados de demonstração.
+
+DEMONSTRAR CADASTRO E PAGAMENTO
+Crie uma conta nova pela página pública.
+Mensal: R$ 29,90. Anual: R$ 299,00.
+Cupom fictício: PARCERIA10 (10% sobre o plano escolhido).
+Com cupom: mensal R$ 26,91; anual R$ 269,10.
+Confirme a simulação para liberar o painel.
+Não existe cobrança real, código Pix ou solicitação de dados de cartão.
+Após liberar o acesso, o administrador vincula o aluno ao professor.
+
+BANCO DA VERSÃO ANTERIOR
+Faça backup e pare o servidor anterior. Preserve o .env.
+Use os arquivos desta versão e execute npm ci.
+Confira .env.example e configure JWT_SECRET aleatória de 32+ caracteres.
+Execute npm run migrate e depois npm start.
+Contas anteriores conservam acesso; novos cadastros passam pela simulação.
+Treinos anteriores são preservados com dias a combinar.
+Não execute seed para atualizar seu banco real.
+
+Leia APRESENTAR.md para o roteiro de demonstração.
+Leia README.md para instalação, migração e regras completas.
+Nunca envie o .env com senhas ao GitHub.
