@@ -1,4 +1,4 @@
-# FTECH · versão 6.0
+# FTECH · 
 
 **Seu próximo treino. Sem dúvidas.**
 
